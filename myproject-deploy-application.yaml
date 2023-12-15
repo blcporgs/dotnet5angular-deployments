@@ -8,7 +8,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: dotnet5angular
-  project: "demo"
+  project: "default"
   syncPolicy:   
     syncOptions:
     - CreateNamespace=true
