@@ -2,15 +2,15 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   creationTimestamp: null
-  name: myproject-deploy
+  name: dotnet5angular
   namespace: argocd
 spec:
   destination:
     server: https://kubernetes.default.svc
   project: ""
   source:
-    path: '<TODO: fill in the path to the folder containing the K8s yamls>'
-    repoURL: '<TODO: fill in the git/helm repo url>'
+    path: dev
+    repoURL: https://github.com/blcporgs/dotnet5angular-deployments.git
 status:
   health: {}
   summary: {}
